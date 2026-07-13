@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   block-size: 100%;
 }
@@ -110,6 +111,7 @@ video {
 }
 
 .content__list-container {
+  position: relative;
   padding: 0px 3px 2px 2px; 
   height: 298px;
   overflow: auto;
@@ -142,7 +144,6 @@ video {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
@@ -222,6 +223,7 @@ video {
   width: 19px;
   border: 1px solid #fff;
   padding: 1px;
+  margin-left: 1.5px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -231,6 +233,7 @@ video {
   width:100%;
   height: 100%;
   opacity: 0;
+  
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -259,7 +262,6 @@ video {
   color: inherit;
   font-size: 18px;
   font-weight: 700;
-  font-style: bold;
   text-align: center;
   cursor: pointer;
 }
@@ -319,11 +321,8 @@ video {
   outline-offset: 1px;
 }
 
-/*обновление происходит ровно в картах загрузки а не на всей странице*/
+/*анимация загрузки ровно в блоке видео*/
 .result__video-container {
   position: relative;
 }
 
-.content__list-container{
-  position: relative;
-}
