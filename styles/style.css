@@ -137,11 +137,6 @@ video {
   inline-size: 100%;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: #fff;  
-}
-
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -298,6 +293,8 @@ video {
 .content__card-link {
   display: block;
   padding: 0 3px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .content__card-link_current {
