@@ -71,7 +71,7 @@ ol {
 .result__video {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 video {
@@ -88,10 +88,13 @@ video {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  margin-bottom: 5px;;
 }
 
 /*блок выведенного списка*/
 .title {
+  width: 259px;
+  height: 210px;
   margin-bottom: 26px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -156,9 +159,9 @@ video {
   font-size: 18px;
   line-height: 16.2px;
   margin-top: 6px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   -webkit-line-clamp: 4; 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -184,6 +187,7 @@ video {
   align-items:center;
   width: fit-content;
   cursor: pointer;
+  gap: 5px;
 }
 
 .search-form__textfield {
