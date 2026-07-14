@@ -69,9 +69,17 @@ ol {
 }
 
 .result__video {
-  width: 711px;
+  width: 711px; 
+  /*убрать отсюла и начистую перенести в контейнер не выйдет, 
+  потому что видео смотрит на этот блок как на родителя, 
+  если не указать высоту-ширину здесь, оно начинает быть мелким*/
   height: 386px;
-  margin-bottom: 12px;
+}
+
+/*анимация загрузки ровно в блоке видео*/
+.result__video-container {
+  position: relative;
+  height: 386px; /*в этом случае прелоадер точно занимает положенные ему пиксели*/
 }
 
 video {
@@ -83,6 +91,7 @@ video {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 16px;
 }
 
 .search-form__fieldset-title {
@@ -323,11 +332,6 @@ video {
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
-}
-
-/*анимация загрузки ровно в блоке видео*/
-.result__video-container {
-  position: relative;
 }
 
 
